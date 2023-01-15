@@ -97,16 +97,16 @@ void	the_start(t_stack *stack)
 	if (stack->totala < 120)
 	{
 		prepare_str(stack, 0);
-		stack->var1 = stack->fake_table[stack->totala / 3];
-		stack->var2 = stack->fake_table[(stack->totala / 3) / 2];
+		stack->var1 = stack->fake_table[stack->totala / 8];
+		stack->var2 = stack->fake_table[(stack->totala / 8) / 2];
 		from_ato_b(stack);
 		back_to_a(stack);
 	}
 	else
 	{
 		prepare_str(stack, 0);
-		stack->var1 = stack->fake_table[stack->totala / 5];
-		stack->var2 = stack->fake_table[(stack->totala / 5) / 2];
+		stack->var1 = stack->fake_table[stack->totala / 9];
+		stack->var2 = stack->fake_table[(stack->totala / 9) / 2];
 		rush_500(stack);
 		back_to_a(stack);
 	}
